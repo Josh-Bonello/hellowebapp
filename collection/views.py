@@ -5,4 +5,5 @@ from django.shortcuts import render
 def index(request):
     # this is your new view
     number = 6
-    return render(request, 'index.html', {'number' : number,})
+    thing = "Thing name" 
+    return render(request, 'index.html', {'number' : number, 'thing' : thing,})
