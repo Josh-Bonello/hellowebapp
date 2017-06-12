@@ -1,0 +1,14 @@
+hellowebapp/
+    .gitignore
+        manage.py
+	    collection/
+	            __init__.py
+		            admin.py
+			            models.py
+				            tests.py
+					            views.py
+						        hellowebapp/
+							        __init__.py
+								        settings.py
+									        urls.py
+										        wsgi.py
