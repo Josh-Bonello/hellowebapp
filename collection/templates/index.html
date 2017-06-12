@@ -5,5 +5,5 @@
 
 {% block content %}
     <h1>Hello World!</h1>
-    <p>I am a basic website. {{ number }} </p>
+    <p>I am a basic website. {% if number %}Number exists! {% endif %}</p>
 {% endblock content %}
