@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
-{% load humanize %}
 {% block title %}
     Homepage - {{ block.super }}
 {% endblock title %}
 
 {% block content %}
-    <h1>Hello World!</h1>
     {% for thing in things %}
-    	{% if thing.name == "myThing" %}
+    <h2>
+	<a href="{% url 'thing_detail' slug=thing.slug %}">
 		{{ thing.name }}
-	{% endif %}
+	</a>
+    </h2>
+    <p>{{ thing.description }}</p>
     {% endfor %}
 {% endblock content %}
