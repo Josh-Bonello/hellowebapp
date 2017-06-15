@@ -123,7 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
-STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'))
+STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'),)
 
 #For Registration
 ACCOUNT_ACTIVATION_DAYS = 7
