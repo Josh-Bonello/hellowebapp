@@ -1,9 +1,11 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, render_to_response
 from collection.models import Thing
 from collection.forms import ThingForm
 from django.template.defaultfilters import slugify
 from django.contrib.auth.decorators import login_required
 from django.http import Http404
+from django.template import RequestContext
+
 
 # Create your views here.
 
@@ -70,3 +72,12 @@ def browse_by_name(request, initial=None):
 
     return render(request, 'search/search.html',{'things': things, 'initial' : initial})
 
+def handler404(request):
+    response = render_to_response('404.html', {}, context_instance=RequestContext(request))
+    response.status_code = 404
+    return response
+
+def handler500(request):
+    response = render_to_response('500.html', {}, context_instance=RequestContext(request))
+    response.status_code = 500
+    return response
