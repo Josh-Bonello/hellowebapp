@@ -7,3 +7,6 @@ plumbum==1.6.3
 rpyc==3.4.1
 six==1.10.0
 traitlets==4.3.2
+hellowebapp-deploy
+psycopg2==2.6.1
+
