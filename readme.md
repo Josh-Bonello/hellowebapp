@@ -6,18 +6,29 @@ This is a proof of concept for utilizing Django to manage and maintain a website
 
 What things you need to install the software and how to install them
 
-```
-Python 2.7 or greater
-[Pip](https://pip.pypa.io/en/stable/installing/)
-[VirtualEnv]
-```
+* A native *NIX environment or [Git Bash](https://git-scm.com/downloads)
+* [Python 2.7 or greater](https://www.python.org/download/releases/2.7/)
+* [Pip](https://pip.pypa.io/en/stable/installing/)
+* [VirtualEnv](https://virtualenv.pypa.io/en/stable/)
 
 ### Installing
+
+Create a virtual environment
+
+```
+virtualenv ~/myhellowebapp
+```
+
+Enter the virtual environment
+
+```
+source ~/myhellowebapp/bin/activate
+```
 
 Install the requirements.txt file
 
 ```
-pip install -r requirements.txt
+pip install -r ~/myhellowebapp/requirements.txt
 ```
 
 ## Running the tests
@@ -25,7 +36,7 @@ pip install -r requirements.txt
 To ensure that the app is compiling and logically stable, run the Django test suite.
 
 ```
-python ~/manage.py test
+python ~/myhellowebapp/manage.py test
 ```
 
 ## Deployment
@@ -33,14 +44,13 @@ python ~/manage.py test
 To deploy to your localhost, execute the following command
 
 ```
-python ~/manage.py runserver
+python ~/myhellowebapp/manage.py runserver
 ```
 
 ## Built With
 
-* [Django]
-* [Python](https://maven.apache.org/) - Dependency Management
-* [](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Django] (https://www.djangoproject.com/)
+* [Python](https://maven.apache.org/)
 
 
 ## Authors
