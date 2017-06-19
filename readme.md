@@ -49,7 +49,7 @@ python ~/myhellowebapp/manage.py runserver
 
 ## Built With
 
-* [Django] (https://www.djangoproject.com/)
+* [Django](https://www.djangoproject.com/)
 * [Python](https://maven.apache.org/)
 
 
